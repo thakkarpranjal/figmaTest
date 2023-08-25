@@ -1,0 +1,25 @@
+import React, { useState } from 'react';
+import Cardbox3 from './Cardbox3';
+import Objectdata3 from './Objectdata3';
+import { Button } from 'antd';
+import { HeartOutlined, ShoppingCartOutlined, EyeOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
+
+function ParentComponent() {
+    const [cartDataArray, setCartDataArray] = useState([]);
+
+    const addToCart = (productData) => {
+        const updatedCart = [...cartDataArray, productData];
+        setCartDataArray(updatedCart);
+        localStorage.setItem('CartData', JSON.stringify(updatedCart));
+    };
+
+    return (
+        <div>
+            {/* Your other components and content */}
+            <Cardbox3 ObjData3={Objectdata3} addToCart={addToCart} />
+        </div>
+    );
+}
+
+export default ParentComponent;

@@ -14,21 +14,24 @@ import {
     TwitterOutlined
   } from '@ant-design/icons';
   import './Responsive1.css';
-  import banner from './imgs/banner.png'
-  import img1 from './imgs/img1.svg'
-  import img2 from './imgs/img2.svg'
-  import img3 from './imgs/img3.svg'
-  import img4 from './imgs/img4.svg'
-  import line from './imgs/line.svg'
-  import line1 from './imgs/line1.svg'
-  import product1 from './imgs/product1.png'
-  import product2 from './imgs/product2.png'
-  import product3 from './imgs/product3.png'
-  import product4 from './imgs/product4.png'
   import homePage from './imgs/Homepage.png'
-  import man from './imgs/man1.png'
   
+  import Row2Col1Img from './imgs/Row2Col1Img.png'
+  import Row2Col2Img from './imgs/Row2Col2Img.png'
+  import Row2Col3Img from './imgs/Row2Col3Img.png'
+  import Row2Col4Img from './imgs/Row2Col4Img.png'
+
+ 
+  import man from './imgs/man1.png'
+  import "./Css/Page2.css"
 import './Homepage.css'
+import Homepage1 from './Page1/Homepage1';
+import Homepage2 from './Page2/Homepage2';
+import Cardbox3 from './Cardbox3';
+import Cardbox5 from './Cardbox5';
+import Coverpage3 from './Coverpage3';
+import Coverpage5 from './Coverpage5';
+import Coverpage6 from './Coverpage6';
 
 function Homepage() {
     const onChange = (currentSlide) => {
@@ -36,104 +39,9 @@ function Homepage() {
       };
     return (
         <div className='Homepage'>
-            <div className='homePage1'>
-                <div className='header1'>
-                    <div className='logo'>
-                        <h2>Brandname</h2>
-                    </div>
-                    <div className='navHeader'>
-                        <div className='menuHeader1'>
-                            <Button type='text'>Home</Button>
-                            <Button type='text'>Product</Button>
-                            <Button type='text'>Pricing</Button>
-                            <Button type='text'>Contact</Button>
-                        </div>
-                        <div className='userHeader'>
-                            <Button type='text' 
-                            >Login</Button>
-                            <Button  type='primary' style={{
-                                backgroundColor: "#FF6551"
-                            }}>Join us <ArrowRightOutlined /></Button>
-                        </div>
-                    </div>
-                </div>
-                <div className='content1'>
-                    <div className='contentLeft1'>
-                        <div className='titleLeft1'>
-                        <h5>For Better Future</h5>
-                        </div>
-                        <div className='headlineLeft1'>
-                            <h1>HIGH QUALITY COURSES</h1>
-                        </div>
-                        <div className='headlineSec1'>
-                        <h4>Find the right instructor for you from over 10,000 teachers</h4>
-                        </div>
-                        <div className='contentButtonLeft1'>
-                            <Button className='join-btn' style={{borderRadius: "5px",
-background: "#FF6551"}} type='primary'>Get Quote Now</Button>
-                            <Button className='learn-btn' style={{backgroundColor:"transparent", borderColor:"#FF6551", color:"#FF6551"}}>Learn More</Button>
-                        </div>
-                    </div>
-                    <div className='contentRight1'>
-                        <div className='contentRightImg1'>
-                          <img className='imgHere' src={banner} />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='homePage2'>
-                <div className='container'>
-                    <div className='details'>
-                        <h6>Practice Advice</h6>
-                        <h2>Most Popular Courses</h2>
-                        <p>Problems trying to resolve the conflict between 
-the two major realms of Classical physics: Newtonian mechanics </p>
-                    </div>
-                    <div className='cards'>
-                    <div className="course-box">
-                            <img className="img1" src={img1} />
-                            <h2>Certified Teacher</h2>
-                            <img className='line' src={line} />
-                            <img className='line1' src={line1} />
-                            <p>The gradual
-                                accumulation of
-                                information about </p>
-                        </div>
-                
-                        <div className="course-box2">
-                            <img className="img1" src={img2} />
-                            <h2>Training Courses</h2>
-                            <img className='line' src={line} />
-                            <img className='line1' src={line1} />
-                            <p>The gradual
-                                accumulation of
-                                information about </p>
-                        
-                        </div>
-                        
-                        <div className="course-box">
-                            <img className="img1" src={img3} />
-                            <h2>Training Courses</h2>
-                            <img className='line' src={line} />
-                            <img className='line1' src={line1} />
-                            <p>The gradual
-                                accumulation of
-                                information about </p>
-                        </div>
-                       
-                        <div className="course-box2">
-                            <img className="img1" src={img4} />
-                            <h2>Lifetime Access</h2>
-                            <img className='line' src={line} />
-                            <img className='line1' src={line1} />
-                            <p>The gradual
-                                accumulation of
-                                information about </p>
-                        </div>
-                        </div>
-                    </div>
-                
-            </div>
+            <Homepage1 />
+           <Homepage2 />
+
             <div className='homePage3'>
                 <div className='container2'>
                     <div className='details2'>
@@ -143,25 +51,9 @@ the two major realms of Classical physics: Newtonian mechanics </p>
                         the two major realms of Classical physics: Newtonian mechanics </p>
                     </div>
                     <div className='cards2'>
-                        <div className='Practice-box'>
-                        <img className='img2' src={product1} />
-                        <div class="practice-main">
-                            <div class="practice-left">
-                                <h3>Expert instruction</h3>
-                            </div>
-                            <div class="practice-rignt">
-                                <button className='star-btn'><i class="bi bi-star-fill"></i> 4.9</button>
-                            </div>
-                        </div>
-                        <h2>Our Experts Teacher</h2>
-                        <p>We focus on ergonomics
-                            and meeting you....</p>
-                        <h4><i class="bi bi-download"></i> 15 Sales</h4>
-                        <h5>$16.48 <span>$6.48</span></h5>
-                        <button class="learn-more"> Learn More<i class="bi bi-chevron-right"></i></button>
-                    </div>
-                    <div className='Practice-box'>
-                        <img className='img2' src={product2} />
+                        <Coverpage3 />
+                    {/* <div className='Practice-box'>
+                        <img className='img2' src={Row2Col2Img} />
                         <div class="practice-main">
                             <div class="practice-left">
                                 <h3>Expert instruction</h3>
@@ -178,7 +70,7 @@ the two major realms of Classical physics: Newtonian mechanics </p>
                         <button class="learn-more"> Learn More<i class="bi bi-chevron-right"></i></button>
                     </div>
                     <div className='Practice-box'>
-                        <img className='img2' src={product3} />
+                        <img className='img2' src={Row2Col3Img} />
                         <div class="practice-main">
                             <div class="practice-left">
                                 <h3>Expert instruction</h3>
@@ -195,7 +87,7 @@ the two major realms of Classical physics: Newtonian mechanics </p>
                         <button class="learn-more"> Learn More<i class="bi bi-chevron-right"></i></button>
                     </div>
                     <div className='Practice-box'>
-                        <img className='img2' src={product4} />
+                        <img className='img2' src={Row2Col4Img} />
                         <div class="practice-main">
                             <div class="practice-left">
                                 <h3>Expert instruction</h3>
@@ -210,7 +102,7 @@ the two major realms of Classical physics: Newtonian mechanics </p>
                         <h4><i class="bi bi-download"></i> 15 Sales</h4>
                         <h5>$16.48 <span>$6.48</span></h5>
                         <button class="learn-more"> Learn More<i class="bi bi-chevron-right"></i></button>
-                    </div>
+                    </div> */}
                     </div>
                 </div>
             </div>
@@ -239,40 +131,10 @@ the two major realms of Classical physics: Newtonian mechanics </p>
                     <p>Problems trying to resolve the conflict between<br />
                         the two major realms of Classical physics: Newtonian mechanics </p>
                 </div>
-                <div className='boxes'>
-                    
-                <div className='lowerContainer'>
-                <div class="teacher-box">
-                  <div className='iconHeart'><HeartFilled style={{padding:"3%",   borderRadius: "25px", backgroundColor:"#26335d" , color: "#fff", fontSize:"30px"}}/></div>
-                        <h4>FREE</h4>
-                        <h5>Organize across all apps by<br /> hand</h5>
-                        <h3>19$ <br /> <span>Per Month</span> </h3>
-                        <p>Slate helps you see how<br /> many more days you need...</p>
-                        <button class="try-btn">Try for free</button>
-                        <div class="teacher-main">
-                            <div class="teacher-left">
-                                <ul>
-                                    <li><CheckCircleFilled style={{color:"green", fontSize:"20px"}} /></li>
-                                    <li><CheckCircleFilled style={{color:"green", fontSize:"20px"}} /></li>
-                                    <li><CheckCircleFilled style={{color:"green", fontSize:"20px"}}/></li>
-                                    <li><CheckCircleOutlined style={{color:"green", fontSize:"20px"}} /></li>
-                                    <li><CheckCircleOutlined style={{color:"green", fontSize:"20px"}}/></li>
-                                    
-                                </ul>
-                            </div>
-                            <div class="teacher-right">
-                                <ul>
-                                    <li>Unlimited product updates </li>
-                                    <li>Unlimited product updates </li>
-                                    <li>Unlimited product updates </li>
-                                    <li>1GB Cloud storage </li>
-                                    <li>Email and community <br />support </li>
-                                </ul>
-                            </div>
-                        </div>
                
-                </div>
-                </div>
+                    <Coverpage5 />
+{/*                     
+                
                 <div className='lowerContainer'>
                 <div class="teacher-box">
                 <div className='iconHeart'><HeartFilled style={{padding:"3%",  borderRadius: "25px", backgroundColor:"#26335d" , color: "#fff", fontSize:"30px"}}/></div>
@@ -336,8 +198,8 @@ the two major realms of Classical physics: Newtonian mechanics </p>
                         </div>
                
                 </div>
-                </div>
-                </div>
+                </div> */}
+                
               </div>
             </div>
             <div className='homePage6'>
@@ -350,8 +212,9 @@ the two major realms of Classical physics: Newtonian mechanics </p>
                     the two major realms of Classical physics: Newtonian mechanics </p>
                         </div>
                     </div>
-                    <div className='reviews'>
-                    <div className='lowerContent6'>
+                    <Coverpage6 />
+                    
+                   {/* { <div className='lowerContent6'>
                         <div className='lower6'>
                             <img className='man' src={man} />
                             <p>Slate helps you see how many more days
@@ -367,25 +230,8 @@ the two major realms of Classical physics: Newtonian mechanics </p>
                         <h3>Regina Miles</h3>
                         <h4>Designer</h4>
                         </div>
-                    </div>
-                    <div className='lowerContent6'>
-                        <div className='lower6'>
-                            <img className='man' src={man} />
-                            <p>Slate helps you see how many more days
-                        you need to work to reach your financial
-                        goal for the month and year.</p>
-                        <ul>
-                            <li><StarFilled style={{color:"yellow"}}/></li>
-                            <li><StarFilled style={{color:"yellow"}}/></li>
-                            <li><StarFilled style={{color:"yellow"}}/></li>
-                            <li><StarFilled style={{color:"yellow"}}/></li>
-                            <li><StarOutlined style={{color:"yellow"}}/></li>
-                        </ul>
-                        <h3>Regina Miles</h3>
-                        <h4>Designer</h4>
-                        </div>
-                        </div>
-                        </div>
+                        </div>} */}
+                        
                 </div>
             </div>
             <div className='homePage7'>

@@ -1,11 +1,17 @@
 import './App.css';
+import Cart from './Cart';
+import Getquote from './Getquote';
 import Homepage from './Homepage';
-
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 function App() {
   return (
-    <div>
-   <Homepage />
-   </div>
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<Homepage />} />
+    <Route path='cart' element={<Cart />} />
+    <Route path='getquote' element={<Getquote />} />
+   </Routes>
+   </BrowserRouter>
   );
 }
 
